@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PARALLEL LIFE — Kelajagingni kashf et</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="stars" id="stars"></div>
+
+  <header>
+    <a class="logo" href="#">PARALLEL <span>LIFE</span></a>
+    <div class="header-label">SENING KELAJAGING — SENING TANLOVING</div>
+  </header>
+
+  <main>
+    <section class="welcome screen active" id="welcome">
+      <div class="portal">
+        <div class="portal-ring ring1"></div>
+        <div class="portal-ring ring2"></div>
+        <div class="portal-center">∞</div>
+      </div>
+
+      <div class="eyebrow">✦ MUQOBIL KELAJAKLAR OLAMIGA XUSH KELIBSAN ✦</div>
+      <h1>Kelajagingni<br><span>KASHF ET</span></h1>
+      <p>
+        Senga bir nechta qiziqarli savollar beramiz.
+        Javoblaring asosida 5, 10 va 20 yildan keyingi
+        hayoting haqida maxsus ssenariy yaratamiz.
+      </p>
+
+      <input id="userName" type="text" maxlength="30"
+             placeholder="Ismingni kiriting...">
+
+      <button class="gold-btn" id="beginBtn">SAYOHATNI BOSHLASH ↗</button>
+      <div class="disclaimer">Bu ilmiy bashorat emas, javoblaringga asoslangan ijodiy ssenariy.</div>
+    </section>
+
+    <section class="quiz screen" id="quiz">
+      <div class="quiz-top">
+        <span id="questionCounter">SAVOL 01 / 10</span>
+        <span id="progressPercent">10%</span>
+      </div>
+
+      <div class="progress">
+        <div id="progressBar"></div>
+      </div>
+
+      <div class="question-card">
+        <div class="question-symbol" id="questionIcon">✦</div>
+        <div class="eyebrow">SEN HAQINGDA BILIB OLAMIZ</div>
+        <h2 id="questionTitle"></h2>
+        <p id="questionDescription"></p>
+
+        <div id="answerArea" class="answer-area"></div>
+
+        <div class="quiz-actions">
+          <button class="back-btn" id="backBtn">← ORQAGA</button>
+          <button class="gold-btn" id="nextBtn">KEYINGISI →</button>
+        </div>
+        <div class="error" id="errorMessage"></div>
+      </div>
+    </section>
+
+    <section class="loading screen" id="loading">
+      <div class="loading-portal">
+        <div class="loading-ring"></div>
+        <span>∞</span>
+      </div>
+      <h2>KELAJAGING YARATILMOQDA...</h2>
+      <p id="loadingText">Javoblaring tahlil qilinmoqda...</p>
+      <div class="loading-line"><div></div></div>
+    </section>
+
+    <section class="result screen" id="result">
+      <div class="eyebrow">✦ PARALLEL LIFE TAQDIM ETADI ✦</div>
+      <h1><span id="resultName"></span>,<br>SENING KELAJAGING</h1>
+      <p class="result-intro">
+        Javoblaring asosida yaratilgan shaxsiy kelajak ssenariying.
+      </p>
+
+      <div class="personality-card">
+        <div class="eyebrow">SENING HAYOT YO‘NALISHING</div>
+        <h2 id="profileTitle"></h2>
+        <p id="profileDescription"></p>
+      </div>
+
+      <div class="future-grid">
+        <article class="future-card">
+          <div class="future-year">+5 YIL</div>
+          <h3>Yaqin kelajak</h3>
+          <p id="future5"></p>
+        </article>
+
+        <article class="future-card">
+          <div class="future-year">+10 YIL</div>
+          <h3>Yangi bosqich</h3>
+          <p id="future10"></p>
+        </article>
+
+        <article class="future-card">
+          <div class="future-year">+20 YIL</div>
+          <h3>Uzoq kelajak</h3>
+          <p id="future20"></p>
+        </article>
+      </div>
+
+      <div class="details-grid">
+        <div class="detail-card">
+          <span>✦</span>
+          <h3>Kuchli tomoning</h3>
+          <p id="strength"></p>
+        </div>
+        <div class="detail-card">
+          <span>◈</span>
+          <h3>E'tibor berishing kerak</h3>
+          <p id="challenge"></p>
+        </div>
+        <div class="detail-card">
+          <span>∞</span>
+          <h3>Senga mos yo‘nalish</h3>
+          <p id="career"></p>
+        </div>
+        <div class="detail-card">
+          <span>✧</span>
+          <h3>Hayotiy tavsiya</h3>
+          <p id="advice"></p>
+        </div>
+      </div>
+
+      <div class="dream-card">
+        <div class="eyebrow">SENING ORZUYING</div>
+        <h2 id="dreamTitle"></h2>
+        <p id="dreamText"></p>
+      </div>
+
+      <div class="result-actions">
+        <button class="gold-btn" id="restartBtn">YANGI SAYOHAT ↻</button>
+        <button class="outline-btn" id="copyBtn">NATIJANI NUSXALASH</button>
+      </div>
+
+      <p class="disclaimer result-disclaimer">
+        Eslatma: bu natija kelajakni aniq aytib bermaydi.
+        U sen bergan javoblardan tuzilgan taxminiy va ijodiy ssenariydir.
+        Kelajagingga bugungi qarorlaring va harakatlaring ta'sir qiladi.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-logo">PARALLEL LIFE <span>∞</span></div>
+    <p>Har bir javob — yangi imkoniyat.</p>
+    <small>Muallif: AKRAMJANOVA JADRA MARATOVNA</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
